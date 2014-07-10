@@ -1,0 +1,70 @@
+- load compress
+!!! 5
+html(lang="en")
+    head
+        title
+            block title
+        link(href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css",rel="stylesheet")
+        link(rel="icon", href="#{ STATIC_URL }images/favicon.ico", type="image/x-icon")
+        - compress css
+           link(type="text/x-scss", rel="stylesheet", href="#{ STATIC_URL }sass/rabitt.scss")
+
+        script(type="text/javascript", src="#{ STATIC_URL}js/google.js")
+
+    body#cursor
+        .game
+            .pulpit
+                .logo
+                    a(href="http://2strefa.pl", target="_blank")
+                     img.logore(src="#{ STATIC_URL }svg/logo1.svg", alt="2Strefa.pl | Web Developing & design. Django/Python, Html5, SASS, SCSS, CSS3, CoffeeScript.")
+                .menu
+                .ranking
+                    .tekstrank
+                        a(href="#")
+                         i.fa.fa-angle-double-right
+                    .tekstrank.brazem
+                        | 12365 : janek56
+                    img.braz(src="#{ STATIC_URL }svg/pucharbraz.svg")
+                    .tekstrank.srebrem
+                        | 65232 : misia21
+                    img.srebro(src="#{ STATIC_URL }svg/pucharsre.svg")
+                    .tekstrank.zlotem
+                        | 235685 : bolo45
+                    img.zloty(src="#{ STATIC_URL }svg/pucharzlo.svg")
+                    #csert.tekstrank.score
+                        .scoredane
+                            | SCORE :
+                        #kliknij.scoreliczba
+                            |0
+                        input(type="hidden", value="0", name="klika")
+                    .tekstrank.score
+                        .scoredane
+                            | TIME :
+                        #czas_time.scoreliczba
+
+            block content
+        #sign_up
+            h3 Kill all rabbits
+            h1 Level 1
+            h2 To play a game just click START button.
+            a(href="#", class="classname", id="shortlyStart")
+                | START
+            | <br/>The game was created by Albert Kowalewski from 2Strefa.pl
+
+        #sign_up_koniec
+            form(action=".", method="POST")
+                h3 Your score :
+                input(class="login", name="login", id="id_login")
+                input(class="email", name="email", id="id_email")
+                button(href="/", class="classname", type="submit")
+                    | SEND SCORE
+            | <br/>The game was created by Albert Kowalewski from 2Strefa.pl
+
+
+        - compress js
+            script(type="text/javascript", src="#{ STATIC_URL}js/jquery-1.11.1.min.js")
+            script(type="text/javascript", src="#{ STATIC_URL}js/jquery-ui-1.10.4.min.js")
+            script(type="text/javascript", src="#{ STATIC_URL}js/jquery.transform2d.js")
+            script(type="text/javascript", src="#{ STATIC_URL}js/jquery.countdown.js")
+            script(type="text/javascript", src="#{ STATIC_URL}js/jquery.lightbox_me.js")
+            script(type="text/coffeescript", src="#{ STATIC_URL}coffee/rabbit.coffee")

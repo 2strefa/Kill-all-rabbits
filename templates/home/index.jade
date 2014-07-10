@@ -1,0 +1,57 @@
+extends base
+- load i18n
+
+block title
+    | {% trans "2Strefa.pl | Web Developing & design. Django/Python, Html5, SASS, SCSS, CSS3, CoffeeScript" %}
+
+block keywords
+
+block description
+
+block js
+
+block css
+
+block content
+    article.playSound6.hiden
+        #gra.contener
+        .zajec3.playSound
+            input(type="hidden", value="1000", name="zajac3")
+            img.zajboom#zlyzajac3(src="#{ STATIC_URL }svg/zajmar.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/zajmar.svg';")
+            img.boom#kiter3(src="#{ STATIC_URL }svg/boom.svg")
+        .zajec7.playSound7
+            input(type="hidden", value="1000", name="zajac7")
+            img.zajboom#zlyzajac7(src="#{ STATIC_URL }svg/zaj.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/zaj.svg';")
+            img.boom#kiter7(src="#{ STATIC_URL }svg/boom.svg")
+        .zajec8.playSound8
+            input(type="hidden", value="1000", name="zajac8")
+            img.zajboom#zlyzajac8(src="#{ STATIC_URL }svg/zajgrub2.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/zajgrub2.svg';")
+            img.boom#kiter8(src="#{ STATIC_URL }svg/boom.svg")
+        .las
+            img(src="#{ STATIC_URL }svg/drzewa.svg", alt="Las", style="width: 100%; height: auto;")
+        .zajec1.playSound2
+            input(type="hidden", value="1000", name="zajac1")
+            img.zajboom#zlyzajac(src="#{ STATIC_URL }svg/zaj.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/zaj.svg';")
+            img.boom#kiter(src="#{ STATIC_URL }svg/boom.svg")
+        .drzewo
+            img(src="#{ STATIC_URL }svg/drzew.svg", alt="Las", style="width: 100%; height: auto;")
+        .zajec2.playSound3
+            input(type="hidden", value="1000", name="zajac2")
+            img.zajboom#zlyzajac2(src="#{ STATIC_URL }svg/lef.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/lef.svg';")
+            img.boom#kiter2(src="#{ STATIC_URL }svg/boom.svg")
+        .zajec5.playSound4
+            input(type="hidden", value="1000", name="zajac5")
+            img.zajboom#zlyzajac5(src="#{ STATIC_URL }svg/zajgrub.svg", alt="Las", style="width: 100%; height: auto;", onmouseover="this.src='#{ STATIC_URL }svg/zajhi.svg';", onmouseout="this.src='#{ STATIC_URL }svg/zajgrub.svg';")
+            img.boom#kiter5(src="#{ STATIC_URL }svg/boom.svg")
+        .kamien
+            img(src="#{ STATIC_URL }svg/kamien.svg", alt="Las", style="width: 100%; height: auto;")
+        .zajec4.playSound5
+            input(type="hidden", value="1000", name="zajac4")
+            img.zajboom#zlyzajacx(src="#{ STATIC_URL }svg/zajbie.svg", alt="Las", style="width: 100%; height: auto;")
+            img.boom#kiterx(src="#{ STATIC_URL }svg/boom.svg")
+        .zajec6.playSound6
+            input(type="hidden", value="1000", name="zajac6")
+            img.zajboom#zlyzajacy(src="#{ STATIC_URL }svg/zajbie2.svg", alt="Las", style="width: 100%; height: auto;")
+            img.boom#kitery(src="#{ STATIC_URL }svg/boom.svg")
+        .trawa
+            img(src="#{ STATIC_URL }svg/trawa.svg", alt="Las", style="width: 100%; height: auto;")
